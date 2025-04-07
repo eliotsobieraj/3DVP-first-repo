@@ -1,0 +1,9 @@
+name: simple workflow
+run-name: ${{github.actor}} is testing your workflow
+on: [push]
+jobs:
+  if: github.ref_name == 'demo'
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello world"
