@@ -1,0 +1,26 @@
+name: worflow with dispatches
+on:
+  workflow_dispatch:
+    inputs:
+      username:
+        required: true
+        type: string
+      level:
+        required: true
+        type: string
+      class:
+        required: true
+        type: choice
+        options:
+          - jedi
+          - sith
+          - rebel
+jobs:
+    player_info:
+      runs-on: ubuntu-latest
+      steps:
+        - run: echo "Le joueur $USERNAME est de niveau $LEVEL et joue un $CLASS"
+          env:
+            USERNAME: ${{ inputs.username}}
+            LEVEL: ${{ inputs.level}}
+            CLASS: ${{ inputs.class}}

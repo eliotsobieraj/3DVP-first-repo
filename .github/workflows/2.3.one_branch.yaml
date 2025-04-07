@@ -1,0 +1,11 @@
+name: one_branch
+run-name: ${{github.actor}} is testing your workflow that is executing on one branch
+on:
+  push:
+    branches:
+      - demo
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello world"
