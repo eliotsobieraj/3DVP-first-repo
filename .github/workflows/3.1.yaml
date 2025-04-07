@@ -17,6 +17,7 @@ on:
           - rebel
 jobs:
     player_info:
+      runs-on: ubuntu-latest
       steps:
         - run: echo "Le joueur $USERNAME est de niveau $LEVEL et joue un $CLASS"
           env:
