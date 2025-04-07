@@ -19,3 +19,7 @@ jobs:
     player_info:
       steps:
         - run: echo "Le joueur $USERNAME est de niveau $LEVEL et joue un $CLASS"
+          env:
+            USERNAME: ${{ inputs.username}}
+            LEVEL: ${{ inputs.level}}
+            CLASS: ${{ inputs.class}}
