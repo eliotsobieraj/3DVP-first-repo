@@ -17,4 +17,5 @@ on:
           - rebel
 jobs:
     player_info:
-    - run: echo "Le joueur $USERNAME est de niveau $LEVEL et joue un $CLASS"
+      steps:
+        - run: echo "Le joueur $USERNAME est de niveau $LEVEL et joue un $CLASS"
