@@ -2,7 +2,7 @@ name: one_branch
 run-name: ${{github.actor}} is testing your workflow that is executing on one branch
 on: [push]
 jobs:
-  if: github.ref_name == 'demo'
+  if: github.ref == 'refs/heads/demo'
   say-hello:
     runs-on: ubuntu-latest
     steps:
