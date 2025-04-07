@@ -9,4 +9,4 @@ jobs:
   triggered_by:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Event triggered by ${{trigger_event}}"
+      - run: echo "Event triggered by ${{github.event_name}}"
