@@ -1,0 +1,11 @@
+name: scheduled workflow
+run-name: ${{github.actor}} is testing your workflow
+on:
+  schedule:
+    - cron: '* * 1 * *'
+    - cron: '10 * * * *'
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello world"
