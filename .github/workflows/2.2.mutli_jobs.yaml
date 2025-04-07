@@ -1,0 +1,10 @@
+name: simple workflow
+run-name: ${{github.actor}} is testing your multi jobs workflow
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Ceci est le premier job"
+      - run : echo "Ceci est le second job"
+      - run : echo "Ceci est le dernier job"
