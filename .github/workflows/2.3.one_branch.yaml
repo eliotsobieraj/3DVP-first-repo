@@ -1,5 +1,5 @@
-name: simple workflow
-run-name: ${{github.actor}} is testing your workflow
+name: one_branch
+run-name: ${{github.actor}} is testing your workflow that is executing on one branch
 on: [push]
 jobs:
   if: github.ref_name == 'demo'
