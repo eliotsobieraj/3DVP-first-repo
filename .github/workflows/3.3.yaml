@@ -1,0 +1,12 @@
+name: Worflow with multiple trigger
+run-name: Workflow that has multiple triggers
+on:
+  workflow_dispatch:
+  push:
+  schedule:
+    - cron: '10 * * * *'
+jobs:
+  triggered_by:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Event triggered by ${{trigger.event}}"
