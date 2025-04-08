@@ -1,4 +1,4 @@
-name: Worflow with ggroupes
+name: Worflow with logs ggroupes
 on:
   push:
 jobs:
