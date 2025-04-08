@@ -1,4 +1,4 @@
-name: Worflow with checkout and run py
+name: Worflow with ggroupes
 on:
   push:
 jobs:
