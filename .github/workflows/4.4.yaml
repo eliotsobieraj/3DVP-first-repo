@@ -14,4 +14,4 @@ jobs:
       - uses: docker/build-push-action@v3
         with:
           push: 'true'
-          tags: 'esobieraj/exo4-4:${{github.event.release.tag_name}}'
+          tags: 'esobieraj/exo4-4:${{github.ref_name}}'
