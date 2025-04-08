@@ -1,0 +1,12 @@
+name: Worflow with checkout and run py
+on:
+  push:
+jobs:
+  log_group:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "ecole-it"
+      - run: | 
+          echo "::group:: ecole-it"
+          echo "::warning:: Bonjour Ecole-it"
+          echo "::endgroup::"
