@@ -1,0 +1,8 @@
+name: simple workflow showing secret
+run-name: ${{github.actor}} is testing your multi jobs workflow
+on: [push]
+jobs:
+  show-secret:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "your secret is = ${{secrets.SUPER_SECRET}}"
