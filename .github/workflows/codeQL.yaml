@@ -5,6 +5,8 @@ jobs:
   semgrep:
     runs-on: ubuntu-latest
     permissions:
+      contents: read
+      pull-requests: write
       security-events: write
     container:
       image: returntocorp/semgrep:1.1.0
